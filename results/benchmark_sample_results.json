@@ -1,0 +1,209 @@
+{
+  "experiment_meta": {
+    "name": "rag_configuration_hallucination_benchmark",
+    "version": "1.0.0",
+    "random_seed": 42,
+    "description": "Factorial evaluation of retrieval depth and chunk size on RAG faithfulness"
+  },
+  "timestamp": "2026-10-12 07:57:40 UTC",
+  "runs": [
+    {
+      "configuration": {
+        "top_k": 3,
+        "chunk_size": 256,
+        "gold_position": "auto"
+      },
+      "mean_metrics": {
+        "hallucination_rate": 0.0,
+        "faithfulness_score": 1.0,
+        "token_f1": 0.8716,
+        "exact_match": 1.0,
+        "mean_total_latency_ms": 0.46
+      },
+      "all_guardrails_passed": true,
+      "sample_size": 6,
+      "queries": [
+        {
+          "query_id": "q_001",
+          "question": "When did Apollo 11 land on the Moon and who was the commander?",
+          "gold_answer": "Apollo 11 landed on the Moon on July 20, 1969, and Neil Armstrong was the commander.",
+          "generated_text": "According to verified records, Apollo 11 landed on the Moon on July 20, 1969, and Neil Armstrong was the commander.",
+          "retrieved_chunk_ids": [
+            "doc_001_chunk_0",
+            "doc_008_chunk_0",
+            "doc_007_chunk_0"
+          ],
+          "metrics": {
+            "hallucination_rate": 0.0,
+            "faithfulness_score": 1.0,
+            "token_f1": 0.8889,
+            "exact_match": 1.0,
+            "retrieval_latency_ms": 0.55,
+            "generation_latency_ms": 0.03,
+            "total_latency_ms": 0.58,
+            "context_token_count": 191
+          },
+          "guardrails": {
+            "latency_passed": true,
+            "latency_ms": 0.5849000343307853,
+            "max_latency_ms": 2500.0,
+            "tokens_passed": true,
+            "context_tokens": 191,
+            "max_context_tokens": 8192,
+            "all_guardrails_passed": true
+          }
+        },
+        {
+          "query_id": "q_002",
+          "question": "What machine did Alan Turing help crack during World War II at Bletchley Park?",
+          "gold_answer": "Alan Turing helped crack intercepted German military coded messages from the Enigma machine at Bletchley Park.",
+          "generated_text": "According to verified records, Alan Turing helped crack intercepted German military coded messages from the Enigma machine at Bletchley Park.",
+          "retrieved_chunk_ids": [
+            "doc_002_chunk_0",
+            "doc_001_chunk_0",
+            "doc_004_chunk_0"
+          ],
+          "metrics": {
+            "hallucination_rate": 0.0,
+            "faithfulness_score": 1.0,
+            "token_f1": 0.8889,
+            "exact_match": 1.0,
+            "retrieval_latency_ms": 0.6,
+            "generation_latency_ms": 0.06,
+            "total_latency_ms": 0.66,
+            "context_token_count": 183
+          },
+          "guardrails": {
+            "latency_passed": true,
+            "latency_ms": 0.6628999341651798,
+            "max_latency_ms": 2500.0,
+            "tokens_passed": true,
+            "context_tokens": 183,
+            "max_context_tokens": 8192,
+            "all_guardrails_passed": true
+          }
+        },
+        {
+          "query_id": "q_003",
+          "question": "What byproduct is produced during photosynthesis?",
+          "gold_answer": "Oxygen is produced as a byproduct during photosynthesis by splitting water molecules.",
+          "generated_text": "According to verified records, Oxygen is produced as a byproduct during photosynthesis by splitting water molecules.",
+          "retrieved_chunk_ids": [
+            "doc_003_chunk_0",
+            "doc_006_chunk_0",
+            "doc_002_chunk_0"
+          ],
+          "metrics": {
+            "hallucination_rate": 0.0,
+            "faithfulness_score": 1.0,
+            "token_f1": 0.8571,
+            "exact_match": 1.0,
+            "retrieval_latency_ms": 0.36,
+            "generation_latency_ms": 0.02,
+            "total_latency_ms": 0.38,
+            "context_token_count": 162
+          },
+          "guardrails": {
+            "latency_passed": true,
+            "latency_ms": 0.38360009107738735,
+            "max_latency_ms": 2500.0,
+            "tokens_passed": true,
+            "context_tokens": 162,
+            "max_context_tokens": 8192,
+            "all_guardrails_passed": true
+          }
+        },
+        {
+          "query_id": "q_004",
+          "question": "Who created the Python programming language and when was it first released?",
+          "gold_answer": "Guido van Rossum created Python, which was first released on February 20, 1991.",
+          "generated_text": "According to verified records, Guido van Rossum created Python, which was first released on February 20, 1991.",
+          "retrieved_chunk_ids": [
+            "doc_004_chunk_0",
+            "doc_001_chunk_0",
+            "doc_008_chunk_0"
+          ],
+          "metrics": {
+            "hallucination_rate": 0.0,
+            "faithfulness_score": 1.0,
+            "token_f1": 0.8667,
+            "exact_match": 1.0,
+            "retrieval_latency_ms": 0.36,
+            "generation_latency_ms": 0.02,
+            "total_latency_ms": 0.38,
+            "context_token_count": 184
+          },
+          "guardrails": {
+            "latency_passed": true,
+            "latency_ms": 0.3753999122232199,
+            "max_latency_ms": 2500.0,
+            "tokens_passed": true,
+            "context_tokens": 184,
+            "max_context_tokens": 8192,
+            "all_guardrails_passed": true
+          }
+        },
+        {
+          "query_id": "q_005",
+          "question": "Where does the James Webb Space Telescope operate and what type of observatory is it?",
+          "gold_answer": "The James Webb Space Telescope is an infrared space observatory operating near the Sun-Earth L2 Lagrange point.",
+          "generated_text": "According to verified records, The James Webb Space Telescope is an infrared space observatory operating near the Sun-Earth L2 Lagrange point.",
+          "retrieved_chunk_ids": [
+            "doc_005_chunk_0",
+            "doc_008_chunk_0",
+            "doc_007_chunk_0"
+          ],
+          "metrics": {
+            "hallucination_rate": 0.0,
+            "faithfulness_score": 1.0,
+            "token_f1": 0.8947,
+            "exact_match": 1.0,
+            "retrieval_latency_ms": 0.36,
+            "generation_latency_ms": 0.02,
+            "total_latency_ms": 0.38,
+            "context_token_count": 177
+          },
+          "guardrails": {
+            "latency_passed": true,
+            "latency_ms": 0.3810000712797046,
+            "max_latency_ms": 2500.0,
+            "tokens_passed": true,
+            "context_tokens": 177,
+            "max_context_tokens": 8192,
+            "all_guardrails_passed": true
+          }
+        },
+        {
+          "query_id": "q_006",
+          "question": "Who published the theory of special relativity and in what year?",
+          "gold_answer": "Albert Einstein published the theory of special relativity in 1905.",
+          "generated_text": "According to verified records, Albert Einstein published the theory of special relativity in 1905.",
+          "retrieved_chunk_ids": [
+            "doc_007_chunk_0",
+            "doc_006_chunk_0",
+            "doc_001_chunk_0"
+          ],
+          "metrics": {
+            "hallucination_rate": 0.0,
+            "faithfulness_score": 1.0,
+            "token_f1": 0.8333,
+            "exact_match": 1.0,
+            "retrieval_latency_ms": 0.35,
+            "generation_latency_ms": 0.02,
+            "total_latency_ms": 0.37,
+            "context_token_count": 188
+          },
+          "guardrails": {
+            "latency_passed": true,
+            "latency_ms": 0.3661999585852027,
+            "max_latency_ms": 2500.0,
+            "tokens_passed": true,
+            "context_tokens": 188,
+            "max_context_tokens": 8192,
+            "all_guardrails_passed": true
+          }
+        }
+      ]
+    }
+  ]
+}
