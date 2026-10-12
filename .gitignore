@@ -1,0 +1,88 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+
+# Go binaries and packages
+*.exe
+*.exe~
+*.dll
+*.dylib
+*.test
+*.out
+vendor/
+
+# Large Model Weights and Binary Checkpoints
+*.bin
+*.pt
+*.pth
+*.onnx
+*.safetensors
+*.h5
+*.pkl
+*.pickle
+
+# Heavy Datasets (Keep sample data only)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Logs and runtime artifacts
+logs/
+*.log
+*.sqlite
+*.sqlite3
+
+# Environment variables & secrets
+.env
+.env.local
+*.pem
+*.key
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE and Editor configurations
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
