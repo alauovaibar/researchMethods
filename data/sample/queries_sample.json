@@ -1,0 +1,44 @@
+[
+  {
+    "query_id": "q_001",
+    "question": "When did Apollo 11 land on the Moon and who was the commander?",
+    "gold_answer": "Apollo 11 landed on the Moon on July 20, 1969, and Neil Armstrong was the commander.",
+    "gold_doc_id": "doc_001",
+    "key_entities": ["July 20, 1969", "Neil Armstrong", "Moon"]
+  },
+  {
+    "query_id": "q_002",
+    "question": "What machine did Alan Turing help crack during World War II at Bletchley Park?",
+    "gold_answer": "Alan Turing helped crack intercepted German military coded messages from the Enigma machine at Bletchley Park.",
+    "gold_doc_id": "doc_002",
+    "key_entities": ["Enigma", "Bletchley Park", "World War II"]
+  },
+  {
+    "query_id": "q_003",
+    "question": "What byproduct is produced during photosynthesis?",
+    "gold_answer": "Oxygen is produced as a byproduct during photosynthesis by splitting water molecules.",
+    "gold_doc_id": "doc_003",
+    "key_entities": ["Oxygen", "water molecules"]
+  },
+  {
+    "query_id": "q_004",
+    "question": "Who created the Python programming language and when was it first released?",
+    "gold_answer": "Guido van Rossum created Python, which was first released on February 20, 1991.",
+    "gold_doc_id": "doc_004",
+    "key_entities": ["Guido van Rossum", "February 20, 1991"]
+  },
+  {
+    "query_id": "q_005",
+    "question": "Where does the James Webb Space Telescope operate and what type of observatory is it?",
+    "gold_answer": "The James Webb Space Telescope is an infrared space observatory operating near the Sun-Earth L2 Lagrange point.",
+    "gold_doc_id": "doc_005",
+    "key_entities": ["infrared space observatory", "Sun-Earth L2", "Lagrange point"]
+  },
+  {
+    "query_id": "q_006",
+    "question": "Who published the theory of special relativity and in what year?",
+    "gold_answer": "Albert Einstein published the theory of special relativity in 1905.",
+    "gold_doc_id": "doc_006",
+    "key_entities": ["Albert Einstein", "1905"]
+  }
+]

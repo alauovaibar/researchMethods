@@ -1,0 +1,39 @@
+experiment:
+  name: "baseline_vanilla_rag"
+  version: "1.0.0"
+  random_seed: 42
+  description: "Standard fixed baseline"
+
+data:
+  corpus_path: "data/sample/corpus_sample.json"
+  queries_path: "data/sample/queries_sample.json"
+  output_dir: "results"
+  output_format: "json"
+
+independent_variables:
+  top_k_values: [3]
+  default_top_k: 3
+  chunk_sizes: [256]
+  chunk_overlap: 32
+  default_chunk_size: 256
+  gold_positions: ["auto"]
+  default_gold_position: "auto"
+
+controlled_variables:
+  retriever:
+    algorithm: "dense_cosine"
+    embedding_dim: 384
+    min_similarity_threshold: 0.10
+  generator:
+    model_name: "meta-llama/Llama-3-8B-Instruct"
+    mode: "deterministic_evaluator"
+    temperature: 0.0
+    top_p: 1.0
+    max_output_tokens: 256
+
+guardrails:
+  max_context_tokens: 8192
+  latency_threshold_ms: 2500.0
+  max_memory_mb: 4096.0
+  per_query_timeout_seconds: 15.0
+  target_error_rate: 0.00

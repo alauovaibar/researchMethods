@@ -1,0 +1,42 @@
+[
+  {
+    "id": "doc_001",
+    "title": "Apollo 11",
+    "text": "Apollo 11 was the American spaceflight that first landed humans on the Moon. Commander Neil Armstrong and Lunar Module Pilot Buzz Aldrin landed the Apollo Lunar Module Eagle on July 20, 1969, at 20:17 UTC. Armstrong became the first person to step onto the lunar surface six hours and 39 minutes later."
+  },
+  {
+    "id": "doc_002",
+    "title": "Alan Turing",
+    "text": "Alan Mathison Turing was an English mathematician, computer scientist, logician, and cryptanalyst. Turing played a pivotal role in cracking intercepted coded messages during World War II at Bletchley Park, notably the Enigma machine used by German military forces."
+  },
+  {
+    "id": "doc_003",
+    "title": "Photosynthesis",
+    "text": "Photosynthesis is a biological process used by plants, algae, and certain bacteria to convert light energy into chemical energy stored in glucose. The overall chemical reaction produces oxygen as a byproduct through the splitting of water molecules."
+  },
+  {
+    "id": "doc_004",
+    "title": "Python Programming Language",
+    "text": "Python was created by Guido van Rossum and was first released on February 20, 1991. It emphasizes code readability with its notable use of significant whitespace, supporting multiple programming paradigms including structured, object-oriented, and functional programming."
+  },
+  {
+    "id": "doc_005",
+    "title": "James Webb Space Telescope",
+    "text": "The James Webb Space Telescope (JWST) is an infrared space observatory launched on December 25, 2021. JWST operates near the Sun-Earth L2 Lagrange point, approximately 1.5 million kilometers from Earth, observing high-redshift celestial objects."
+  },
+  {
+    "id": "doc_006",
+    "title": "Great Barrier Reef",
+    "text": "The Great Barrier Reef is the world's largest coral reef system, composed of over 2,900 individual reefs and 900 islands stretching for over 2,300 kilometres over an area of approximately 344,400 square kilometres off the coast of Queensland, Australia."
+  },
+  {
+    "id": "doc_007",
+    "title": "Special Relativity",
+    "text": "Albert Einstein published the theory of special relativity in 1905. The theory postulates that the laws of physics are invariant in all inertial frames of reference and that the speed of light in a vacuum is identical for all observers regardless of motion."
+  },
+  {
+    "id": "doc_008",
+    "title": "Structure of DNA",
+    "text": "The molecular structure of DNA was determined in 1953 by James Watson and Francis Crick, based on X-ray diffraction images taken by Rosalind Franklin and Raymond Gosling. DNA consists of two strands coiled around each other in a double helix."
+  }
+]

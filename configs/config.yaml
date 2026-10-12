@@ -1,0 +1,57 @@
+experiment:
+  name: "rag_configuration_hallucination_benchmark"
+  version: "1.0.0"
+  random_seed: 42
+  description: "Factorial evaluation of retrieval depth and chunk size on RAG faithfulness"
+
+data:
+  corpus_path: "data/sample/corpus_sample.json"
+  queries_path: "data/sample/queries_sample.json"
+  output_dir: "results"
+  output_format: "json"
+
+independent_variables:
+  top_k_values: [1, 3, 5, 10]
+  default_top_k: 3
+  chunk_sizes: [128, 256, 512, 1024]
+  chunk_overlap: 32
+  default_chunk_size: 256
+  gold_positions: ["first", "middle", "last", "auto"]
+  default_gold_position: "auto"
+
+controlled_variables:
+  retriever:
+    algorithm: "dense_cosine"
+    embedding_dim: 384
+    min_similarity_threshold: 0.10
+
+  generator:
+    model_name: "meta-llama/Llama-3-8B-Instruct"
+    mode: "deterministic_evaluator"
+    temperature: 0.0
+    top_p: 1.0
+    max_output_tokens: 256
+    system_prompt: |
+      You are a precise, fact-based AI assistant. Answer the user query using ONLY the provided context passages.
+      Do not invent facts or extrapolate beyond the text. If the context does not contain sufficient information, state that the evidence is insufficient.
+
+guardrails:
+  max_context_tokens: 8192
+  latency_threshold_ms: 2500.0
+  max_memory_mb: 4096.0
+  per_query_timeout_seconds: 15.0
+  target_error_rate: 0.00
+
+metrics:
+  primary:
+    - "hallucination_rate"
+    - "faithfulness_score"
+  secondary:
+    - "token_f1"
+    - "exact_match"
+    - "context_recall"
+  operational:
+    - "retrieval_latency_ms"
+    - "generation_latency_ms"
+    - "total_latency_ms"
+    - "context_token_length"
